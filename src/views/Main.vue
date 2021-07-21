@@ -73,10 +73,17 @@ export default {
     display: flex
     align-items: stretch
     justify-content: flex-start
+    @media only screen and (max-width : 1200px)
+      height: auto
+      flex-wrap: wrap
   .left-panel
     width: 470px
+    @media only screen and (max-width : 1200px)
+      width: 100%
 
   .game-side
     flex: 1 0 auto
+    @media only screen and (max-width : 1200px)
+      width: 100%
 
 </style>

@@ -1,7 +1,7 @@
 <template>
   <div class="final-page">
     <div class="img">
-      <img src="img/final.jpg" alt="">
+      <img src="img/final.png" alt="">
     </div>
     <div class="final-page__top">
       <div class="button" @click="{resetGame(); $router.push(`/`);}">
@@ -83,16 +83,27 @@ export default {
     display: flex
     flex-direction: column
     position: relative
+    @media only screen and (max-width : 1200px)
+      overflow: hidden
+      height: auto
+      padding-right: 0
     .img
       right: 0
       top: 0
       position: absolute
+      @media only screen and (max-width : 1200px)
+        opacity: 0.2
     &__top
       flex: 0 0 auto
       padding: 50px 30px 0
       display: flex
       align-items: flex-start
       justify-content: flex-start
+      @media only screen and (max-width : 1200px)
+        position: relative
+        z-index: 10
+      @media only screen and (max-width : 1200px)
+        padding: 0px 5px 0
       .button
         background: linear-gradient(63.53deg, #2D8550 16.62%, #5E6EC2 83.38%)
         border-radius: 100%
@@ -104,6 +115,12 @@ export default {
         height: 70px
         cursor: pointer
         overflow: hidden
+        @media only screen and (max-width : 768px)
+          width: 45px
+          height: 45px
+          margin: 20px 15px 0
+          img
+            transform: scale(0.6)
     &__content
       display: flex
       align-items: center
@@ -111,17 +128,27 @@ export default {
       flex-wrap: wrap
       flex: 1 0 auto
       padding: 50px 130px 50px
+      @media only screen and (max-width : 1200px)
+        position: relative
+        z-index: 10
+      @media only screen and (max-width : 768px)
+        padding: 25px 30px 20px
       .results
         display: flex
         align-items: center
         padding-bottom: 50px
         border-bottom: 2px solid #D9D9D9
+        @media only screen and (max-width : 768px)
+          padding-bottom: 20px
         &__item
           flex: 1 0 0
           font-weight: 750
           font-size: 16px
           line-height: 20px
           color: #424242
+          @media only screen and (max-width : 768px)
+            font-size: 14px
+            line-height: 16px
           .value
             margin-bottom: 10px
             display: block
@@ -129,6 +156,9 @@ export default {
             font-weight: 400
             font-size: 48px
             line-height: 59px
+            @media only screen and (max-width : 768px)
+              font-size: 30px
+              line-height: 35px
       .content
         text-align: left
         .title
@@ -138,22 +168,37 @@ export default {
           line-height: 35px
           letter-spacing: 0.02em
           color: #8E9AD5
+          @media only screen and (max-width : 768px)
+            margin-top: 30px
+            font-size: 20px
+            line-height: 30px
           span
             display: block
             font-weight: 750
             font-size: 40px
             line-height: 44px
+            @media only screen and (max-width : 768px)
+              font-size: 25px
+              line-height: 30px
         .text
           margin-top: 20px
           font-weight: normal
           font-size: 24px
           line-height: 29px
           color: #424242
+          @media only screen and (max-width : 768px)
+            font-size: 16px
+            line-height: 22px
 
     &__bottom
       flex: 0 0 auto
       padding: 50px 130px 84px
       text-align: left
+      @media only screen and (max-width : 1200px)
+        position: relative
+        z-index: 10
+      @media only screen and (max-width : 768px)
+        padding: 30px 30px 50px
       .button
         cursor: pointer
         display: inline-block
@@ -164,4 +209,7 @@ export default {
         padding: 15px 25px
         background: linear-gradient(90deg, #D9D9D9 0%, #A1A1A1 100%)
         border-radius: 100px
+        @media only screen and (max-width : 768px)
+          font-size: 18px
+          line-height: 24px
 </style>

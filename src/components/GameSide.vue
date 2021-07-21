@@ -53,6 +53,8 @@ export default {
     position: relative
     display: flex
     flex-direction: column
+    @media only screen and (max-width : 1200px)
+      flex-direction: column-reverse
 
     &__content
       padding: 100px 100px 70px 100px
@@ -60,6 +62,8 @@ export default {
       align-items: center
       justify-content: center
       flex: 1 0 auto
+      @media only screen and (max-width : 1200px)
+        padding: 20px 50px 50px 50px
 
     &__buttons
       padding: 0 10px 64px
@@ -67,6 +71,8 @@ export default {
       align-items: flex-start
       justify-content: flex-start
       flex-wrap: wrap
+      @media only screen and (max-width : 1200px)
+        padding: 0 10px 30px
     &__button
       width: calc(100% / 3 - 40px)
       margin: 20px 20px 0
@@ -81,6 +87,12 @@ export default {
       align-items: center
       justify-content: center
       cursor: pointer
+      @media only screen and (max-width : 1200px)
+        width: calc(100% / 3 - 10px)
+        margin: 20px 5px 0
+        font-size: 16px
+        line-height: 20px
+        height: 50px
       &_v1
         background: linear-gradient(266.19deg, #8049C7 0%, #CA57FD 100%)
       &_v2

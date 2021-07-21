@@ -84,6 +84,8 @@ export default {
       display: flex
       align-items: flex-start
       justify-content: flex-start
+      @media only screen and (max-width : 1200px)
+        padding: 0px 5px 0
     &__button
       margin: 20px 20px 0
       background: #FFFFFF
@@ -95,6 +97,12 @@ export default {
       height: 70px
       cursor: pointer
       overflow: hidden
+      @media only screen and (max-width : 1200px)
+        width: 45px
+        height: 45px
+        margin: 20px 15px 0
+        img
+          transform: scale(0.6)
 
     &__params
       flex: 1 0 auto
@@ -104,6 +112,8 @@ export default {
       align-items: center
       justify-content: center
       flex-direction: column
+      @media only screen and (max-width : 1200px)
+        padding: 20px 15px 0px
       &-title
         padding: 0 10px
         width: 100%
@@ -111,6 +121,10 @@ export default {
         font-weight: 750
         font-size: 36px
         line-height: 44px
+        @media only screen and (max-width : 1200px)
+          font-size: 20px
+          padding: 0 5px
+          line-height: 25px
       &-items
         width: 100%
         margin-top: 30px
@@ -118,6 +132,8 @@ export default {
         align-items: flex-start
         justify-content: center
         flex-wrap: wrap
+        @media only screen and (max-width : 1200px)
+          margin-top: 10px
     &__param
       width: calc(50% - 20px)
       margin: 0px 10px 37px
@@ -133,18 +149,28 @@ export default {
       justify-content: flex-start
       text-align: center
       padding: 10px
+      @media only screen and (max-width : 1200px)
+        width: calc(100% / 3 - 10px)
+        margin: 0px 5px 15px
+        font-size: 20px
+        line-height: 25px
       .img
         display: flex
         align-items: center
         justify-content: center
         width: 60px
         height: 60px
+        @media only screen and (max-width : 1200px)
+          width: 30px
+          height: 30px
         img
           max-width: 100%
           max-height: 100%
       .value
         padding-left: 10px
         width: calc(100% - 60px)
+        @media only screen and (max-width : 1200px)
+          width: calc(100% - 30px)
     &__bottom
       flex: 0 0 auto
       background: rgba(#fff, 0.15)
@@ -155,12 +181,19 @@ export default {
       text-align: center
       color: #FFFFFF
       padding: 15px 15px 15px
+      @media only screen and (max-width : 1200px)
+        padding: 10px
+        font-size: 20px
+        line-height: 25px
       .values
         width: 100%
         font-weight: 300
         font-size: 45px
         line-height: 55px
         letter-spacing: 0.02em
+        @media only screen and (max-width : 1200px)
+          font-size: 25px
+          line-height: 30px
         span
           font-weight: 750
 

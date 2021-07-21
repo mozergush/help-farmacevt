@@ -1,25 +1,13 @@
 # help-farmacevt
 My Vue 3 project
+My project written using Vue 3 and Vuex
 
 ## Project setup
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## Github-Pages link
+https://mozergush.github.io/help-farmacevt/
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+![Alt text](preview.jpg?raw=true "Title")

@@ -72,7 +72,10 @@ export default {
         border-radius: 10px
         opacity: 0
         transition: 0.3s ease
-
+        @media only screen and (max-width : 768px)
+          font-size: 18px
+          line-height: 24px
+          padding: 10px 10px
       &_prep1
         .print
           top: 60%
@@ -95,6 +98,8 @@ export default {
         height: 350px
         width: 100%
         pointer-events: none
+        @media only screen and (max-width : 768px)
+          height: 180px
         img
           width: 100%
           height: 100%
@@ -103,12 +108,17 @@ export default {
         padding: 15px 50px 30px
         text-align: left
         background: #FFFFFF
+        @media only screen and (max-width : 768px)
+          padding: 15px 15px 20px
         .title
           pointer-events: none
           font-weight: 750
           font-size: 32px
           line-height: 39px
           color: #8E9AD5
+          @media only screen and (max-width : 768px)
+            font-size: 20px
+            line-height: 25px
         .text
           pointer-events: none
           margin-top: 5px
@@ -117,5 +127,9 @@ export default {
           font-size: 24px
           line-height: 29px
           color: #424242
+          @media only screen and (max-width : 768px)
+            font-size: 16px
+            line-height: 20px
+            min-height: unset
 
 </style>
