@@ -1,5 +1,4 @@
 # help-farmacevt
-My Vue 3 project
 My project written using Vue 3 and Vuex
 
 ## Project setup
